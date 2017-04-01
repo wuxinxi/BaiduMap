@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/roadlight"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@mipmap/ic_homepage_roadlight" />
+
+    <Button
+        android:id="@+id/enlargeBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/enlarge_selector" />
+
+    <Button
+        android:id="@+id/narrowBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/narrow_selector" />
+
+    <Button
+        android:id="@+id/location"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/location_selector" />
+
+</LinearLayout>

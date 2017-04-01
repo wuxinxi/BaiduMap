@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_1"
+        android:showAsAction="never"
+        android:title="普通地图"></item>
+    <item
+        android:id="@+id/item_2"
+        android:showAsAction="never"
+        android:title="卫星地图"></item>
+    <item
+        android:id="@+id/item_3"
+        android:showAsAction="never"
+        android:title="实时交通ON"></item>
+
+    <item
+        android:id="@+id/item_4"
+        android:showAsAction="never"
+        android:title="普通模式"></item>
+    <item
+        android:id="@+id/item_5"
+        android:showAsAction="never"
+        android:title="跟随模式"></item>
+    <item
+        android:id="@+id/item_6"
+        android:showAsAction="never"
+        android:title="罗盘模式"></item>
+    <item
+        android:id="@+id/item_7"
+        android:showAsAction="never"
+        android:title="添加覆盖物"></item>
+    <item
+        android:id="@+id/item_8"
+        android:showAsAction="never"
+        android:title="导航"></item>
+
+</menu>

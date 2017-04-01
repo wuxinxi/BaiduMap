@@ -1,0 +1,38 @@
+1.jar包+so库的引用
+ 初始化（在setConView()之前调用，建议在application）
+ SDKInitializer.initialize(getApplicationContext());
+
+   MapStatusUpdate status = MapStatusUpdateFactory.zoomTo(15.0F);
+   mBaiduMap.setMapStatus(status);
+
+2.加入定位，集成方向传感器
+  LocationClient
+  LocationClientOption定位的一些设置
+  BDLocationListener
+      BDLocation
+      MyLocationData
+  自定义图标
+  BitmapDescriptor
+  引入方向传感器
+  SensorManager-Sensor
+  BDLocationListener对方向进行设置
+
+3.模式切换
+  mLocationMode:三种模式，NORMAL、FOLLOWING、COMPASS(圆盘,实时定位)
+  MyLocationConfiguration config = new MyLocationConfiguration(mLocationMode, true, mLoacationBitmap);
+  mBaiduMap.setMyLocationConfigeration(config);
+
+4.添加覆盖物，覆盖物的点击事件以及InfoWindow
+  Marker:覆盖物标示
+  OverlayOptions 指定位置坐标
+  Baidumap.setOnMarerClickListener
+  InfoWindow:BaiduMap.showInfowindow,BaiduMap.hideInfoWindow
+
+
+5.事件
+  //覆盖物的点击事件
+    mBaiduMap.setOnMarkerClickListener(this);
+  //地图的点击事件
+    mBaiduMap.setOnMapClickListener(this);
+  //地图状态事件
+    mBaiduMap.setOnMapStatusChangeListener(this);

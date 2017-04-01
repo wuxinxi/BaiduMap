@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/transparent_half_1
+        </item>
+    </style>
+
+
+    <style name="RecyclerItem">
+        <item name="android:foreground">@drawable/selector_recycler_item</item>
+    </style>
+
+    <style name="animBottom">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+</resources>
